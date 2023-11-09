@@ -16,11 +16,7 @@ namespace EX01.Controllers
 
 
 
-        [HttpGet(Name = "GetAllProducts")]
-        public ActionResult<List<Products>> GetAllProducts()
-        {
-            return Ok(ProductsList);
-        }
+
 
         [HttpGet("GetProductById{id}")]
         public ActionResult<Products> GetProductById(string id)
